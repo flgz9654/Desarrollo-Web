@@ -1,0 +1,181 @@
+
+/* Selector del mismo nombre de la etiqueta de HTML */
+/* Selector de tipo class a etiquetas, se llama con un . */
+/* Selector de tipo ID a etiqietas, se llama con un #  */                             
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Righteous&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF5E4;
+}
+
+#seleccionar-mascota {
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-family: 'Righteous', cursive;
+    color: #850E35;
+    font-size: 32px;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 20px;
+    background-color: #D1512D;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 180px;
+    height: 100px;
+    background: #850E35;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.tarjeta-de-mokepon:hover {
+    cursor: pointer;
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid #850E35;
+    color: #850E35;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#boton-mascota:hover {
+    background-color: #FFC4C4;
+    color: black;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: #D07000;
+    color: white;
+    font-weight: bold;
+}
+
+input:hover + label {
+    background-color: #FFC4C4;
+    color: black;
+    font-weight: bold;
+}
+ 
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque {
+    background: #850E35;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-color: transparent;
+    width: 100px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.boton-ataque:hover {
+    background-color: #FFC4C4;
+    color: black;
+    font-weight: bold;
+}
+
+#mensajes {
+    width: 370px;
+    height: 62px;
+    background: #F5C7A9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    color:#850E35;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 15px;
+    justify-content: center;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: black; 
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    font-weight: bold;
+}
+
+#boton-reiniciar:hover {
+    background-color: #D1512D;
+    color: white;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 15px;
+    background: #850E35;
+    border-radius: 20px;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 100px 100px;
+} 
+
+#vidas-jugador, #vidas-enemigo{
+    font-size:32px;
+    margin-bottom:0
+}
+
+@media (max-width: 500px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+    .titulo {
+        font-family: 'Righteous', cursive;
+        color: #850E35;
+        font-size: 32px;
+        text-align: center;
+    }
+}
